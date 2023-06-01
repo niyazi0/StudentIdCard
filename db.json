@@ -1,0 +1,347 @@
+{
+  "students": [
+    {
+      "name": "Niyazi",
+      "surname": "ÖZTÜRK",
+      "identityNumber": "12345678910",
+      "city": "Ankara",
+      "eMail": "niyazi@test.com",
+      "id": "2a0a40b0-5849-41ca-bedd-2569ab43c95c",
+      "card": {
+        "id": 1,
+        "cardBalance": "1.74"
+      },
+      "borrowedBook": [
+        {
+          "id": 1,
+          "bookId": 2,
+          "borrowingDate": "1685367390215",
+          "returnDate": "1685527446702"
+        },
+        {
+          "id": 2,
+          "bookId": 2,
+          "borrowingDate": "1685528431752",
+          "returnDate": ""
+        },
+        {
+          "id": 3,
+          "bookId": 1,
+          "borrowingDate": "1685605550178",
+          "returnDate": "1685605702287"
+        },
+        {
+          "id": 4,
+          "bookId": 4,
+          "borrowingDate": "1685605939554",
+          "returnDate": "1685606549582"
+        },
+        {
+          "id": 5,
+          "bookId": 1,
+          "borrowingDate": "1685643219918",
+          "returnDate": ""
+        }
+      ],
+      "accountDetails": [
+        {
+          "id": 1,
+          "process": "Market Alışverişi",
+          "total": "-10.00",
+          "date": "1685617625489"
+        },
+        {
+          "id": 2,
+          "process": "Market Alışverişi",
+          "total": "-4.13",
+          "date": "1685617625489"
+        }
+      ],
+      "foods": []
+    },
+    {
+      "name": "Ahmet",
+      "surname": "CEYLAN",
+      "identityNumber": "12345678912",
+      "city": "İstanbul",
+      "eMail": "ahmet@test.com",
+      "id": "a5e2e2fa-c50b-49aa-8339-edc6f0b2999d",
+      "card": {
+        "id": 2,
+        "cardBalance": "50.00"
+      },
+      "borrowedBook": [
+        {
+          "id": 1,
+          "bookId": 2,
+          "borrowingDate": "1685367390215",
+          "returnDate": "1685606724564"
+        },
+        {
+          "id": 2,
+          "bookId": 2,
+          "borrowingDate": "1685605778184",
+          "returnDate": "1685606724564"
+        },
+        {
+          "id": 3,
+          "bookId": 2,
+          "borrowingDate": "1685605827600",
+          "returnDate": "1685606724564"
+        },
+        {
+          "id": 4,
+          "bookId": 4,
+          "borrowingDate": "1685606559652",
+          "returnDate": "1685606696354"
+        },
+        {
+          "id": 5,
+          "bookId": 3,
+          "borrowingDate": "1685606951086",
+          "returnDate": ""
+        },
+        {
+          "id": 6,
+          "bookId": 1,
+          "borrowingDate": "1685617625489",
+          "returnDate": "1685623541789"
+        }
+      ],
+      "accountDetails": [
+        {
+          "id": 1,
+          "process": "Market Alışverişi",
+          "total": "-4.13",
+          "date": "1685617625489"
+        },
+        {
+          "id": 2,
+          "process": "Market Alışverişi",
+          "total": "-4.13",
+          "date": "1685617625489"
+        },
+        {
+          "id": 3,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "10",
+          "date": "1685617625489"
+        },
+        {
+          "id": 4,
+          "process": "Bankamatik - Para Çekme",
+          "total": "-5",
+          "date": "1685617625489"
+        },
+        {
+          "id": 5,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "10.03",
+          "date": "1685617625489"
+        },
+        {
+          "id": 6,
+          "process": "Bankamatik - Para Çekme",
+          "total": "-10",
+          "date": "1685617625489"
+        },
+        {
+          "id": 7,
+          "process": "Market Alışverişi",
+          "total": "-4.13",
+          "date": "1685621149116"
+        },
+        {
+          "id": 8,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "10",
+          "date": "1685622672255"
+        },
+        {
+          "id": 9,
+          "process": "Market Alışverişi",
+          "total": "-9.09",
+          "date": "1685622677595"
+        },
+        {
+          "id": 10,
+          "process": "Bankamatik - Para Çekme",
+          "total": "-3.55",
+          "date": "1685622961969"
+        },
+        {
+          "id": 11,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "4.04",
+          "date": "1685622967167"
+        },
+        {
+          "id": 12,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "0.1",
+          "date": "1685622985213"
+        },
+        {
+          "id": 13,
+          "process": "Market Alışverişi",
+          "total": "-4.04",
+          "date": "1685622988689"
+        },
+        {
+          "id": 14,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "10",
+          "date": "1685623057155"
+        },
+        {
+          "id": 15,
+          "process": "Yemekhane",
+          "total": "-4.04",
+          "date": "1685623060947"
+        },
+        {
+          "id": 16,
+          "process": "Bankamatik - Para Çekme",
+          "total": "-6.06",
+          "date": "1685623092025"
+        },
+        {
+          "id": 17,
+          "process": "Bankamatik - Para Yatırma",
+          "total": "50",
+          "date": "1685623728010"
+        }
+      ],
+      "foods": []
+    },
+    {
+      "name": "Büşra",
+      "surname": "DEMİR",
+      "identityNumber": "12345678914",
+      "city": "İzmir",
+      "eMail": "busra@test.com",
+      "id": "6c3ae1a6-e75d-4a65-b7d0-22dc148f646e",
+      "card": {
+        "id": 3,
+        "cardBalance": "4.29"
+      },
+      "borrowedBook": [
+        {
+          "id": 1,
+          "bookId": 3,
+          "borrowingDate": "1675327390112",
+          "returnDate": ""
+        },
+        {
+          "id": 2,
+          "bookId": 2,
+          "borrowingDate": "1685605723007",
+          "returnDate": "1685605732908"
+        },
+        {
+          "id": 3,
+          "bookId": 4,
+          "borrowingDate": "1685605944306",
+          "returnDate": "1685606081276"
+        },
+        {
+          "id": 4,
+          "bookId": 4,
+          "borrowingDate": "1685606554228",
+          "returnDate": ""
+        },
+        {
+          "id": 5,
+          "bookId": 1,
+          "borrowingDate": "1685606894163",
+          "returnDate": "1685606911816"
+        },
+        {
+          "id": 6,
+          "bookId": 2,
+          "borrowingDate": "1685606935160",
+          "returnDate": ""
+        }
+      ],
+      "accountDetails": [
+        {
+          "id": 1,
+          "process": "Market Alışverişi",
+          "total": "-4.13",
+          "date": "1685617625489"
+        }
+      ],
+      "foods": []
+    }
+  ],
+  "market": [
+    {
+      "id": 1,
+      "product": "Çikolata",
+      "price": 3.5
+    },
+    {
+      "id": 2,
+      "product": "Süt",
+      "price": 9
+    },
+    {
+      "id": 3,
+      "product": "Elma",
+      "price": 5.5
+    },
+    {
+      "id": 4,
+      "product": "Simit",
+      "price": 10
+    }
+  ],
+  "BookLibrary": [
+    {
+      "id": 1,
+      "bookName": "Çalıkuşu",
+      "author": "Reşat Nuri Güntekin",
+      "stock": 2
+    },
+    {
+      "id": 2,
+      "bookName": "Tutunamayanlar",
+      "author": "Oğuz Atay",
+      "stock": 0
+    },
+    {
+      "id": 3,
+      "bookName": "Devlet Ana",
+      "author": "Kemal Tahir",
+      "stock": 2
+    },
+    {
+      "id": 4,
+      "bookName": "Dokuzuncu Hariciye Koğuşu",
+      "author": "Peyami Safa",
+      "stock": 1
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "product": "Çorba",
+      "price": 4
+    },
+    {
+      "id": 2,
+      "product": "Ana Yemek",
+      "price": 9
+    },
+    {
+      "id": 3,
+      "product": "Salata",
+      "price": 3.5
+    },
+    {
+      "id": 4,
+      "product": "İçecek",
+      "price": 2
+    }
+  ]
+}

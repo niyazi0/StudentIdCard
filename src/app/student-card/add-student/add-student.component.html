@@ -1,0 +1,40 @@
+<div class="container m-5 ">
+    <div class=" d-flex justify-content-center">
+    <div class="col-lg-6" >
+    <form [formGroup]="productForm" (ngSubmit)="onAdd()">
+        <div class="form-group">
+          <label class="form-label">İsim</label>
+          <input required class="form-control"  formControlName="name">
+          <div class="alert alert-danger" *ngIf="isControlTouched('name')">Bu alan boş bırakılamaz.</div>
+     
+        </div>
+    
+        <div class="form-group">
+          <label class="form-label">Soyisim</label>
+          <input class="form-control"  formControlName="surname">
+          <div class="alert alert-danger" *ngIf="isControlTouched('surname')">Bu alan boş bırakılamaz.</div>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Kimlik Numarası</label>
+          <input class="form-control" formControlName="identityNumber">
+          <div class="alert alert-danger" *ngIf="isControlTouched('identityNumber')">Bu alan boş bırakılamaz.</div>
+        </div>
+    
+        <div class="form-group">
+          <label class="form-label">Şehir</label>
+          <input class="form-control" formControlName="city">
+          <div class="alert alert-danger" *ngIf="isControlTouched('city')">Bu alan boş bırakılamaz.</div>
+        </div>
+    
+        <div class="form-group">
+          <label class="form-label">E-Posta</label>
+          <input class="form-control" formControlName="eMail">
+          <div class="alert alert-danger" *ngIf="isControlTouched('eMail')">Geçerli bir E-Posta adresi yazınız.</div>
+        </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Ekle</button>
+      </div>
+      </form>
+    </div>
+</div></div>

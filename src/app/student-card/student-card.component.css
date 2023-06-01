@@ -1,0 +1,36 @@
+
+/*Business Card Css */
+.business-card {
+  border: 1px solid #cccccc;
+  background: #f7f9ff;
+  padding: 10px;
+  border-radius: 19px;
+  margin-bottom: 10px;
+}
+.profile-img {
+
+  background: white;
+  border-radius: 50%;
+}
+.text-header {
+  color: #3a3636;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+.text-content {
+    color: #655959;
+    font-size: 17px;
+}
+a.link {
+  font-size: 17px;
+  color:#655959 ;
+  text-decoration: none;
+ }
+
+ .card-id{
+  font-style: italic;
+  color:rgb(90, 101, 101);
+  margin-top: 8px;
+ }

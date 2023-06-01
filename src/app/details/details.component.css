@@ -1,0 +1,17 @@
+.text-body-secondary{
+    color:rgb(88, 90, 90);
+    font-style: italic;
+}
+
+.small-date{
+    color:#6c757d;
+    font-size:0.84em;
+}
+.btn-info{
+    color:white;
+    background-color: #1c4535;
+}
+.btn-info:hover{
+    color:white;
+    background-color: #144d57;
+}

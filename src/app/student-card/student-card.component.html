@@ -1,0 +1,47 @@
+
+
+	<div>
+        <button class="btn btn-primary m-2" (click)="addStudent()">Öğrenci Ekle</button>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12" *ngFor="let student of students">
+            <div class="business-card p-4">
+                <div class="media">
+                    <div class="row">
+                    <div class="col-3 ">
+                        <div class="text-center">
+                        <img class="img-thumbnail profile-img" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
+                        <p class="card-id badge text-bg-secondary my-0" >Kart ID: #{{student.card.id}}</p>
+                
+                    </div>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="media-heading">{{ student.name }} {{ student.surname }}  </h2><hr>
+                        <table>
+                            <tr>
+                                <td class="text-header">Kimlik No:</td>
+                                <td class="text-content">{{ student.identityNumber }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-header">Şehir:</td>
+                                <td class="text-content">{{ student.city }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-header">E-Posta:</td>
+                                <td class="mail"><a href="mailto:{{student.eMail}}">{{student.eMail}}</a></td>
+                            </tr>
+                        </table>
+                
+                    </div>
+                    <div class="col-3 align-self-center ">
+                        <div ><br><br></div>
+                        <div><a routerLink="details/{{student.id}}"><button class="w-75 btn btn-primary btn-sm my-1">Görüntüle</button></a></div>
+                        <div><a routerLink="update/{{student.id}}"><button class="w-75 btn btn-warning btn-sm my-1">Düzenle</button></a></div>
+                        <div><button (click)="deleteStudent(student.id)" class="w-75 btn btn-danger btn-sm my-1">Sil</button></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+	</div>

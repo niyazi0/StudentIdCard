@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="m-5 justify-content-center" *ngIf="data.type=='book'">
+        <h2>Kitap Geçmişi</h2>
+        <h6>Bu liste; bu güne kadar kütüphaneden aldığınız tüm kitapları içermektedir.</h6>
+        <hr>
+        <table class="table table-bordered">
+            <thead>
+                <th>#</th>
+                <th>Kitap Adı</th>
+                <th>Yazar</th>
+                <th>Alma Tarihi</th>
+                <th>İade Tarihi</th>
+            </thead>
+            <tr *ngFor="let book of books; let i = index">
+                <th>{{i+1}} -</th>
+                <td>{{book.bookName}} </td>
+                <td>{{book.author}} </td>
+                <td>{{borrows[i].borrowingDate | date: 'd/MM/y H:mm'}}</td>
+                
+                <ng-container *ngIf="borrows[i].returnDate==''; else elseTemplate">
+                    <td class="text-secondary"><em>Henüz teslim etmediniz.</em></td>
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <td>{{borrows[i].returnDate | date: 'd/MM/y H:mm'}}</td>
+                </ng-template>
+                
+            </tr>
+           
+        </table>
+    </div>
+    <div class="m-5 justify-content-center" *ngIf="data.type=='account'">
+        <h2>Hesap Geçmişi</h2>
+        <h6>Bu liste; bu güne kadar yaptığınız alışverişleri içermektedir.</h6>
+        <hr>
+        <table class="table table-bordered">
+            <thead>
+                <th>#</th>
+                <th>İşlem</th>
+                <th>Tutar</th>
+                <th>İşlem Tarihi</th>
+               
+            </thead>
+            <tr *ngFor="let operation of account; let i = index">
+                <th>{{i+1}} -</th>
+                <td>{{operation.process}} </td>
+             
+                <ng-container *ngIf="operation.process=='Bankamatik - Para Yatırma'; else elseTemplate">
+                    <td class="text-success">{{operation.total}} </td>
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <td class="text-danger">{{operation.total}} </td>
+                </ng-template>
+                
+                <td>{{operation.date | date: 'd/MM/y H:mm'}} </td>
+            </tr>
+           
+        </table>
+    </div>
+</div>
