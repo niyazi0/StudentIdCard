@@ -15,7 +15,9 @@ getUsers() {
   return this.http.get<Student[]>(this.Url);
 }
 getUsersLength() {
-  return this.http.get<Student[]>(this.Url).subscribe.length;
+  
+ return this.http.get<Student[]>(this.Url);
+
 }
 
 getUserById(id: any) {

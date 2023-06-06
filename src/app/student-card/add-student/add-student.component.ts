@@ -8,7 +8,7 @@ import { StudentService } from 'src/app/student.service';
   styleUrls: ['./add-student.component.css']
 })
 export class AddStudentComponent {
-  studentLenght:number=0;
+  studentLenght:number =0;
   productForm!:any;
   constructor(private formBuilder: FormBuilder, 
               private studentService: StudentService,
@@ -19,9 +19,14 @@ export class AddStudentComponent {
     }
 
 ngOnInit(){
-  this.studentLenght= this.studentService.getUsersLength()
-  this. studentLenght+=1 as number;
-
+   this.studentService.getUsersLength()
+  .subscribe(
+    data=>{
+        this.studentLenght=data[data.length-1].card.id
+        this. studentLenght+=1 as number;
+  // console.log(this.studentLenght);
+  });
+  
   this.productForm = new FormGroup({
     id :new FormControl(crypto.randomUUID()),
     name:new FormControl("", Validators.required),
@@ -29,7 +34,7 @@ ngOnInit(){
     identityNumber:new FormControl('', Validators.required),
     city:new FormControl('', Validators.required),
     eMail:new FormControl('', [Validators.required,Validators.email]),
-    card:new FormControl({id: (this.studentLenght), cardBalance:"0"}),
+    card:new FormControl(),
     borrowedBook:new FormControl([]),
     accountDetails:new FormControl([]),
     foods:new FormControl([]),
@@ -47,7 +52,9 @@ ngOnInit(){
       if(this.productForm.valid)
       {
        
-     // console.log(this.productForm.value);  
+  
+     this.productForm.value.card=({id:this.studentLenght, cardBalance:"7"})
+        // console.log(this.productForm.value); 
       this.studentService.createUser(this.productForm.value).subscribe();
       window.location.reload();
       }
